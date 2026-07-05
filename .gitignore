@@ -1,0 +1,21 @@
+# Build outputs
+sss
+*.o
+*.out
+*.exe
+*.dSYM/
+
+# Reports/submission files
+*.pdf
+*.docx
+*.zip
+*.tar.gz
+
+# Editor/OS files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Runtime/log files
+*.log
