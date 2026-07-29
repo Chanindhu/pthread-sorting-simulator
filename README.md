@@ -35,20 +35,20 @@ The threads alternate using `pthread_cond_wait()` and `pthread_cond_signal()`. S
 
 ```text
 pthread-sorting-simulator/
-‚îú‚îÄ‚îÄ Makefile
-‚îú‚îÄ‚îÄ README.md
-‚îú‚îÄ‚îÄ include/
-‚îÇ   ‚îî‚îÄ‚îÄ sort.h
-‚îú‚îÄ‚îÄ src/
-‚îÇ   ‚îú‚îÄ‚îÄ main.c
-‚îÇ   ‚îî‚îÄ‚îÄ sort.c
-‚îú‚îÄ‚îÄ data/
-‚îÇ   ‚îú‚îÄ‚îÄ ToSort
-‚îÇ   ‚îú‚îÄ‚îÄ example-input.txt
-‚îÇ   ‚îî‚îÄ‚îÄ small-input.txt
-‚îî‚îÄ‚îÄ docs/
-    ‚îú‚îÄ‚îÄ sample-output.txt
-    ‚îî‚îÄ‚îÄ thread-synchronization.md
+|-- include/
+|   `-- sort.h                                # Shared sort/synchronization declarations
+|-- src/
+|   |-- main.c                                # Program entry point and file input flow
+|   `-- sort.c                                # pthread sorting and shared-state logic
+|-- data/
+|   |-- ToSort
+|   |-- example-input.txt
+|   `-- small-input.txt
+|-- docs/
+|   |-- sample-output.txt
+|   `-- thread-synchronization.md
+|-- Makefile
+`-- README.md
 ```
 
 ## Requirements
